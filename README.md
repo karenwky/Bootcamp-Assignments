@@ -2,7 +2,11 @@
 Data Science &amp; Machine Learning Immersive since July 2019. 
 
 ### Foundation
-Check out my assignments on [Gist](https://gist.github.com/yyzz1010). 
+* Check out my assignments on [Gist](https://gist.github.com/yyzz1010). 
+* [Web Scraping & Data Analysis Group Project](https://github.com/yyzz1010/FTDS-Xccelerate/tree/master/Foundation)
+  * transaction_history_graphs
+  * 3D_Scatterplot
+  * regex ex
 
 ### Beginner ML
 * [Day16 MLIntroAndEDA](https://github.com/yyzz1010/FTDS-Xccelerate/tree/master/BeginnerML/Day16%20MLIntroAndEDA)
@@ -12,3 +16,9 @@ Check out my assignments on [Gist](https://gist.github.com/yyzz1010).
 * [Day17 Preprocessing](https://github.com/yyzz1010/FTDS-Xccelerate/tree/master/BeginnerML/Day17%20Preprocessing)
   * Feature-Scaling_stock
   * Imputer_Feature-Scaling_vpn
+
+* [Day18 LinearRegression](https://github.com/yyzz1010/FTDS-Xccelerate/tree/master/BeginnerML/Day18%20LinearRegression)
+  * Remove-Outliers_boston
+
+* [Day19 PolynomialRegressionandRegularization](https://github.com/yyzz1010/FTDS-Xccelerate/tree/master/BeginnerML/Day19%20PolynomialRegressionandRegularization)
+  * Regularization_red-wine
