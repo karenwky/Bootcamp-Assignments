@@ -21,4 +21,10 @@ Data Science &amp; Machine Learning Immersive since July 2019.
   * Remove-Outliers_boston
 
 * [Day19 PolynomialRegressionandRegularization](https://github.com/yyzz1010/FTDS-Xccelerate/tree/master/BeginnerML/Day19%20PolynomialRegressionandRegularization)
+  * Polynomial-Regression_boston
   * Regularization_red-wine
+  * Get-dummies_grades
+
+* [Day20 Logistic Regression](https://github.com/yyzz1010/FTDS-Xccelerate/tree/master/BeginnerML/Day20%20Logistic%20Regression)
+  * Logistic-Regression_skin
+  * GridSearch_advertising
