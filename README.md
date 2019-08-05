@@ -25,6 +25,12 @@ Data Science &amp; Machine Learning Immersive since July 2019.
   * Regularization_red-wine
   * Get-dummies_grades
 
-* [Day20 Logistic Regression](https://github.com/yyzz1010/FTDS-Xccelerate/tree/master/BeginnerML/Day20%20Logistic%20Regression)
+* [Day20 LogisticRegression](https://github.com/yyzz1010/FTDS-Xccelerate/tree/master/BeginnerML/Day20%20LogisticRegression)
   * Logistic-Regression_skin
   * GridSearch_advertising
+
+* [Day21 kNNandSVM]()
+  
+
+* [Day22 DecisionTrees]()
+  
