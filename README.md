@@ -26,11 +26,11 @@ Data Science &amp; Machine Learning Immersive since July 2019.
   * Get-dummies_grades
 
 * [Day20 LogisticRegression](https://github.com/yyzz1010/FTDS-Xccelerate/tree/master/BeginnerML/Day20%20LogisticRegression)
-  * Logistic-Regression_skin
+  * Logistic-Regression_iris (solver & multi_class)
+  * Logistic-Regression_skin (Normalization)
   * GridSearch_advertising
 
-* [Day21 kNNandSVM]()
-  
+* [Day21 kNNandSVM](https://github.com/yyzz1010/FTDS-Xccelerate/tree/master/BeginnerML/Day21%20kNNandSVM)
+  * kNN-Classification_zoo
 
 * [Day22 DecisionTrees]()
-  
