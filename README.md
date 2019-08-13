@@ -33,9 +33,14 @@ Data Science &amp; Machine Learning Immersive since July 2019.
 * [Day21 kNNandSVM](https://github.com/yyzz1010/FTDS-Xccelerate/tree/master/BeginnerML/Day21%20kNNandSVM)
   * kNN-Classification_zoo
 
-* [Day22 DecisionTreesAndEnsembleMethods]()
+* [Day22 DecisionTreesAndEnsembleMethods](https://github.com/yyzz1010/FTDS-Xccelerate/tree/master/BeginnerML/Day22%20DecisionTreesAndEnsembleMethods)
   * Decision-Tree_zoo
 
-* [Day23 KMeansAndPCA]()
+* [Day23 KMeansAndPCA](https://github.com/yyzz1010/FTDS-Xccelerate/tree/master/BeginnerML/Day23%20KMeansAndPCA)
   * KMeans-Clustering_cars
   * PCA_porto
+
+* [Group Project_HK Horse Racing](https://github.com/yyzz1010/FTDS-Xccelerate/tree/master/BeginnerML/Group%20Project_HK%20Horse%20Racing)
+  * combine_table
+  * modeling
+  * deploy
