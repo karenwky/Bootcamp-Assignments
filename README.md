@@ -44,3 +44,6 @@ Data Science &amp; Machine Learning Immersive since July 2019.
   * combine_table
   * modeling
   * deploy
+  
+### Beginner Data Engineering
+* [MySQL ex](https://github.com/yyzz1010/FTDS-Xccelerate/tree/master/BeginnerDataEngineering)
