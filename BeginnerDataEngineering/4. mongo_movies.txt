@@ -1,0 +1,141 @@
+use mydb
+
+db.createCollection('movies')
+
+db.movies.insertMany([
+    {
+        title: 'Fight Clubwriter : Chuck Palahniuk', 
+        year: 1999, 
+        actors: ['Brad Pitt', 'Edward Norton']
+    }, 
+    {
+        title: 'Pulp Fiction', 
+        writer: 'Quentin Tarantino', 
+        year: 1994, 
+        actors: ['John Travolta', 'Uma Thurman']
+    }, 
+    {
+        title: 'Inglorious Basterds', 
+        writer: 'Quentin Tarantino', 
+        year: 2009, 
+        actors: ['Brad Pitt', 'Diane Kruger', 'Eli Roth']
+    }, 
+    {
+        title: 'The Hobbit: An Unexpected Journey', 
+        writer: 'J.R.R. Tolkien', 
+        year: 2012, 
+        franchise: 'The Hobbit'
+    }, 
+    {
+        title: 'The Hobbit: The Desolation of Smaug', 
+        writer: 'J.R.R. Tolkien',
+        year: 2013, 
+        franchise: 'The Hobbit'
+    }, 
+    {
+        title: 'The Hobbit: The Battle of the Five Armies', 
+        writer: 'J.R.R. Tolkien',
+        year: 2012, 
+        franchise: 'The Hobbit', 
+        synopsis: 'Bilbo and Company are forced to engage in a war against an array of combatants and keep the Lonely Mountain from falling into the hands of a rising darkness.'
+    }, 
+    {   
+        title: 'Pee Wee Herman's Big Adventure'
+    }, 
+    {   
+        title: 'Avatar'
+    }
+])
+
+* Query/Find Documents
+1. Get all documents
+db.movies.find().pretty()
+
+2. Get all documents with `writer` set to "Quentin Tarantino"
+db.movies.find({writer: 'Quentin Tarantino'}).pretty()
+
+3. Get all documents where `actors` include "Brad Pitt"
+db.movies.find({actors: 'Brad Pitt'}).pretty()
+
+4. Get all documents with `franchise` set to "The Hobbit"
+db.movies.find({franchise: 'The Hobbit'}).pretty()
+
+5. Get all movies released in the 90s (1990-1999)
+db.movies.find({$and: [
+    {year: {$gt: 1989}}, {year: {$lt: 2000}}
+    ]}).pretty()
+
+6. Get all movies released before the year 2000 or after 2010 (no 2001-2009)
+db.movies.find({$or: [
+    {year: {$gt: 2010}}, {year: {$lt: 2000}}
+    ]}).pretty()
+
+* Update Documents
+1. Add a synopsis to "The Hobbit: An Unexpected Journey"
+db.movies.updateOne(
+    {title: 'The Hobbit: An Unexpected Journey'}, 
+    {
+        $set: {synopsis: 'A reluctant hobbit, Bilbo Baggins, sets out to the Lonely Mountain with a spirited group of dwarves to reclaim their mountain home -and the gold withinit -from the dragon Smaug.'}
+    }
+)
+
+2. Add a synopsis to "The Hobbit: The Desolation of Smaug"
+db.movies.updateOne(
+    {title: 'The Hobbit: The Desolation of Smaug'}, 
+    {
+        $set: {synopsis: 'The dwarves, along with Bilbo Baggins and Gandalf the Grey, continue their quest to reclaim Erebor, their homeland, from Smaug. Bilbo Baggins is in possession of a mysterious and magical ring.'}
+    }
+)
+
+3. Add an actor named "Samuel L. Jackson" to the movie "Pulp Fiction"
+db.movies.updateOne(
+    {title: 'Pulp Fiction'}, 
+    {
+        $push: {actors: 'Samuel L. Jackson'}
+    }
+)
+
+/$addToSet do not add the item to the given field if it already contains it, on the other hand $push will add the given object to field whether it exists or not./
+
+* Text Search
+1. Find all movies that have a synopsis that contains the word "Bilbo"
+db.movies.find({synopsis: {$in: [/Bilbo/]}}).pretty()
+
+2. Find all movies that have a synopsis that contains the word "Gandalf"
+db.movies.find({synopsis: {$in: [/Gandalf/]}}).pretty()
+
+3. Find all movies that have a synopsis that contains the word "Bilbo" and not the word "Gandalf"
+db.movies.find(
+    {$and:
+    [
+        {synopsis: {$in: [/Bilbo/]}}, 
+        {synopsis: {$not: /Gandalf/}}
+    ]}
+).pretty()
+
+4. Find all movies that have a synopsis that contains the word "dwarves" or "hobbit"
+db.movies.find(
+    {$or:
+    [
+        {synopsis: {$in: [/dwarves/]}}, 
+        {synopsis: {$in: [/hobbit/]}}
+    ]}
+).pretty()
+
+5. Find all movies that have a synopsis that contains the word "gold" and "dragon"
+db.movies.find(
+    {$and:
+    [
+        {synopsis: {$in: [/gold/]}}, 
+        {synopsis: {$in: [/dragon/]}}
+    ]}
+).pretty()
+
+* Delete Documents
+1. Delete the movie "Pee Wee Herman's Big Adventure"
+db.movies.remove({title: 'Pee Wee Herman's Big Adventure'})
+
+2. Delete the movie "Avatar"
+db.movies.remove({title: 'Avatar'})
+
+/Solution Reference: https://github.com/kaminisai/MongoDB-ASsignment/blob/f63093e774771638eeb84fd107ca0d849eca61be/Assignment%201.txt/
