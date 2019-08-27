@@ -47,3 +47,5 @@ Data Science &amp; Machine Learning Immersive since July 2019.
   
 ### Beginner Data Engineering
 * [MySQL ex](https://github.com/yyzz1010/FTDS-Xccelerate/tree/master/BeginnerDataEngineering)
+* [MongoDB ex](https://github.com/yyzz1010/FTDS-Xccelerate/tree/master/BeginnerDataEngineering)
+* [BigQuery ex](https://github.com/yyzz1010/FTDS-Xccelerate/tree/master/BeginnerDataEngineering)
