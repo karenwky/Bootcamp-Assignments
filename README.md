@@ -1,5 +1,4 @@
-# FTDS-Xccelerate
-Data Science &amp; Machine Learning Immersive since July 2019. 
+# Bootcamp Assignments
 
 ### Foundation
 * Check out my assignments on [Gist](https://gist.github.com/yyzz1010). 
