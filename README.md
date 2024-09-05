@@ -1,7 +1,7 @@
 # Bootcamp Assignments
 
 ### Foundation
-* Check out my assignments on [Gist](https://gist.github.com/yyzz1010). 
+* Check out my assignments on [Gist](https://gist.github.com/karenwky). 
 * [Web Scraping & Data Analysis Group Project](https://github.com/yyzz1010/FTDS-Xccelerate/tree/master/Foundation)
   * transaction_history_graphs
   * 3D_Scatterplot
